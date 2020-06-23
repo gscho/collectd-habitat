@@ -1,0 +1,25 @@
+pkg_origin=gscho
+pkg_name=collectd
+pkg_version=5.11.0
+pkg_maintainer="greg.c.schofield@gmail.com"
+pkg_license=('GPL-2.0')
+pkg_source=https://collectd.org/files/${pkg_name}-${pkg_version}.tar.bz2
+pkg_shasum=37b10a806e34aa8570c1cafa6006c604796fae13cc2e1b3e630d33dcba9e5db2
+pkg_filename=${pkg_name}-${pkg_version}.tar.gz
+pkg_deps=(
+  core/coreutils
+)
+pkg_build_deps=(
+  core/gcc
+  core/make
+  core/autoconf
+  core/automake
+  core/m4
+  core/bison
+  core/libtool
+  core/flex
+  core/pkg-config
+)
+pkg_bin_dirs=(bin)
+pkg_include_dirs=(include)
+pkg_lib_dirs=(lib)
